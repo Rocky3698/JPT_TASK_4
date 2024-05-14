@@ -5,11 +5,12 @@ class A{
     void show(int a){
         cout<<"given "<<a<<endl;
     }
-    void show(float a){
-        cout<<"given "<<a<<endl;
-    }
-    void show(int a, int b){
-        cout<<"given "<<a+b<<endl;
+    
+};
+class B:public A{
+    public:
+    void show(int a){
+        cout<<"given "<<a*20<<endl; 
     }
 };
 int main()
@@ -18,10 +19,8 @@ int main()
     cin.tie(0);
     cout.tie(0);
 
-    A obj;
+    B obj;
     obj.show(10);
-    // obj.show(10.5);
-    obj.show(10,20);
 
     return 0;
 }
