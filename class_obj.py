@@ -1,5 +1,5 @@
 class A:
-    x = 0
+    x = 0 ## this a public encapsulation, by using __variable name make it private and only can accessable from the same class. _variable name makes it protected.
     def __init__(self,x) -> None: #works like a constructor
         self.x=x
         print("constructor")

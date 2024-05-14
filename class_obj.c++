@@ -4,7 +4,7 @@ using namespace std;
 // classs is a blueprint and the things created based on this blueprint named objects.
 class A
 {
-public:
+public: // this the access modifier for class properties. if public then can anyone can access from anywhere if private only class scop can acess if protected then derived class can access and also form the same class
     int a; // data
     A(int x)
     {                // methods
